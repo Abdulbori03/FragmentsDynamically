@@ -11,8 +11,7 @@ class MainActivity : AppCompatActivity() {
         val myFragment1 = MyFragment1()
         val fragmentManager = supportFragmentManager
         val transaction = fragmentManager.beginTransaction()
-        transaction.replace(R.id.liner_container, myFragment1)
-        transaction.addToBackStack("Salom")
+        transaction.add(R.id.liner_container, myFragment1)
         transaction.commit()
 
     }
